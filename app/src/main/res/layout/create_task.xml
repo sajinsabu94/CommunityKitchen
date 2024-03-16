@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:weightSum="9">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/orderWard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Ward Number"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:singleLine="false"
+        android:layout_weight="2"
+        android:hint="Address"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/editTextQty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Quantity"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Mobile"
+        android:inputType="number" />
+    <EditText
+            android:id="@+id/landMark"
+            android:hint="Land Mark"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:textAlignment="viewEnd"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/addItemDBBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundbutton"
+            android:onClick="addItemToDB"
+            android:text="Make Order" />
+    </LinearLayout>
+</LinearLayout>
